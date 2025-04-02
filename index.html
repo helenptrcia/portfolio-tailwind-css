@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio Tailwind CSS</title>
+   <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+
+   <!-- Header Start -->
+   <header class="absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="flex items-center justify-between relative">
+            <div class="px-4">
+               <a href="#home" class="font-bold text-lg text-pinkbased block py-6">helenpatricia</a>
+            </div>
+            <div class="flex items-center px-4">
+               <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                  <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                  <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                  <span class="hamburger-line transition duration-300 ease-in-out"></span>
+               </button>
+
+               <nav id="nav-menu" class="hidden absolute py-5 bg-gray-900 shadow-xs shadow-white rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none">
+                  <ul class="block lg:flex">
+                     <li class="group">
+                        <a href="#home" class="text-base text-teks2 py-2 mx-8 flex group-hover:text-pinkbased">Home</a>
+                     </li>
+                     <li class="group">
+                        <a href="#about" class="text-base text-teks2 py-2 mx-8 flex group-hover:text-pinkbased">About Me</a>
+                     </li>
+                     <li class="group">
+                        <a href="#portfolio" class="text-base text-teks2 py-2 mx-8 flex group-hover:text-pinkbased">Portfolio</a>
+                     </li>
+                     <li class="group">
+                        <a href="#clients" class="text-base text-teks2 py-2 mx-8 flex group-hover:text-pinkbased">Clients</a>
+                     </li>
+                     <li class="group">
+                        <a href="#contact" class="text-base text-teks2 py-2 mx-8 flex group-hover:text-pinkbased">Contact</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- Header End -->
+
+   <!-- Hero Section Start -->
+   <section id="home" class="pt-25">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
+
+            <!-- Bagian Teks -->
+            <div class="w-full text-center md:text-left px-4 lg:w-1/2">
+               <h1 class="text-base font-semibold text-teks1 md:text-xl">Halo Semua 🤩🙌, saya 
+                  <span class="block font-bold text-pinkbased text-3xl mt-1 lg:text-4xl">Helen Patricia</span></h1>
+               <h2 class="font-medium text-purplebased text-lg mb-5 lg:text-xl">Informatics Student<span class="text-teks1">  |  </span> <span class="text-cyan-300">Data Science Enthusiast</span></h2>
+               <p class="font-medium italic text-teks2 mb-10 leading-relaxed">i studied a lot, deep in my heart ✨</p>
+               <a href="#" class="text-base font-semibold bg-pinkbased py-3 px-8 rounded-full hover:shadow-lg hover:bg-pink-300 transition duration-300 ease-in-out">Hubungi Saya</a>
+            </div>
+
+            <div class="w-full self-end px-4 lg:w-1/2">
+               <div class="relative mt-10 lg:mt-9 lg:right-0">
+                  <!-- Foto -->
+                  <img src="img/helen.png" alt="Helen Patricia" class="max-w-[275px] md:max-w-[385px] mx-auto">
+
+                  <!-- SVG Background -->
+                  <span class="absolute -bottom-2 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                     <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="oklch(0.718 0.202 349.761)" 
+                        d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5, 52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8, 52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8, -48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8, -79.2,35.6,-66.3,47.4,-51Z"
+                        transform="translate(100 100) scale(1.1)"/>
+                     </svg>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Hero Section End -->
+
+   <!-- About Section Start -->
+   <section id="about" class="pt-25 pb-25 lg:pt-50 lg:pb-38">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-10 lg:w-1/2">
+               <h3 class="font-bold uppercase text-pinkbased text-2xl mb-4 lg:text-3xl">About Me</h3>
+               <p class="font-medium text-base text-justify text-teks1 max-w-xl lg:text-lg">Hey there! Aku adalah mahasiswa Teknik Informatika dari Universitas Sriwijaya yang antusias dalam pengembangan teknologi, khususnya di bidang data science. Aku senang berkolaborasi, mengeksplorasi ide baru, dan terus berkembang di dunia teknologi!</p>
+            </div>
+                
+            <div class="w-full px-4 lg:w-1/2">
+               <h3 class="font-semibold text-purplebased text-2xl mb-4 lg:text-3xl">Let's Connect 🚀</h3> 
+               <p class="font-medium text-base text-justify text-teks1 mb-6 lg:text-lg">Temukan aku di media sosial untuk berbagi insight, proyek, dan obrolan seru seputar teknologi!</p>                   
+                    
+               <div class="flex items-center"> 
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/helenptrcia" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+                     <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                        <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                     </svg>
+                  </a>
+
+                  <!-- X -->
+                  <a href="https://www.x.com/lenptrcia" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+                     <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                     </svg>
+                  </a>
+
+                  <!-- Tiktok -->
+                  <a href="https://www.tiktok.com/@helenptrcia" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+                     <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                     </svg>
+                  </a>
+
+                  <!-- LinkedIn -->
+                  <a href="https://www.linkedin.com/in/helen-patricia-40a991341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="" class="fill-current" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                     </svg>                        
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>  
+   <!-- About Section End -->
+
+   <!-- Portfolio Start -->
+   <section id="portfolio" class="pt-25 bg-gray-800">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="w-full px-4">
+            <div class="mx-auto text-center mb-16">
+               <h4 class="font-semibold uppercase text-lg text-pinkbased mb-2">Portfolio</h4>
+               <h2 class="font-bold text-purplebased text-3xl mb-4 sm:text-4xl lg:text-5-xl">Latest Projects ✨</h2>
+               <p class="font-medium text-md text-teks1 md:text-lg">My journey in the IT world has just begun. Here are the projects I have developed so far, and there’s much more to come! 🚀</p>
+            </div>
+         </div> 
+         
+         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+            <!-- Collabor8 -->
+            <div class="mb-12 p-4 md:w-1/2">
+               <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/portfolio/convert.jpg" alt="Convert" width="w-full">
+               </div>
+               <h3 class="font-semibold text-center text-xl text-pinkbased mt-5 mb-3">Number System Converter & Arithmetic Operations</h3>
+               <p class="font-medium text-base text-justify text-teks2">Aplikasi Konversi & Operasi Bilangan berbasis Python dan Tkinter ini memungkinkan pengguna untuk mengonversi bilangan antara Desimal, Biner, Oktal, dan Heksadesimal, serta melakukan operasi aritmetika pada berbagai basis (2, 8, 10, 16). Dengan antarmuka sederhana dan interaktif, aplikasi ini dilengkapi validasi input untuk memastikan akurasi perhitungan.</p>
+            </div>
+
+            <!-- Kalkulator -->
+            <div class="mb-12 p-4 md:w-1/2">
+               <div class="rounded-md shadow-md overflow-hidden">
+                  <img src="img/portfolio/collaborate.jpg" alt="Collaborate" width="w-full">
+               </div>
+               <h3 class="font-semibold text-center text-xl text-pinkbased mt-5 mb-3">Collabor8 Design</h3>
+               <p class="font-medium text-base text-justify text-teks2">Era digital membuka pintu untuk kolaborasi lintas universitas dan negara. Mahasiswa butuh platform untuk kerja sama, berbagi ide, dan mengembangkan keterampilan kolektif. Kebutuhan ini muncul dari keterbatasan sistem pendidikan tradisional dalam mendukung kolaborasi lintas batas. Collabor8 adalah platform yang menghubungkan mahasiswa global untuk bekerja sama dalam proyek, berkompetisi, dan berjejaring secara internasional.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Portfolio End -->
+
+   <!-- Clients Section Start -->
+    <section id="clients" class="pt-25 pb-25 bg-cyan-950">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="w-full px-4">
+            <div class="mx-auto text-center mb-16">
+               <h4 class="font-semibold uppercase text-lg text-pinkbased mb-2">Clients</h4>
+               <h2 class="font-bold text-purplebased text-3xl mb-4 sm:text-4xl lg:text-5-xl">Partners I have collaborated with</h2>
+               <p class="font-medium text-md text-teks1 md:text-lg">I have been fortunate to collaborate with leading companies, applying my deep passion for data science to drive innovation in AI, machine learning, and data-driven solutions 🤩</p>
+            </div>
+         </div>
+
+         <div class="w-full px-4">
+            <div class="flex flex-wrap items-center justify-center">
+               <a href="#" class="max-w-[120px] mx-4 py-4 transition duration-500 filter invert hover:invert-0 active:invert-0 lg:mx-6 xl:mx-8">
+                  <img src="img/clients/blubca.png" alt="blubca" class="logo">
+               </a>
+               <a href="#" class="max-w-[120px] mx-4 py-4 transition duration-500 filter invert hover:invert-0 active:invert-0 lg:mx-6 xl:mx-8">
+                  <img src="img/clients/gojek.png" alt="gojek" class="logo">
+               </a>
+               <a href="#" class="max-w-[120px] mx-4 py-4 transition duration-500 filter invert hover:invert-0 active:invert-0 lg:mx-6 xl:mx-8">
+                  <img src="img/clients/microsoft.webp" alt="microsoft" class="logo">
+               </a>
+               <a href="#" class="max-w-[120px] mx-4 py-4 transition duration-500 filter invert hover:invert-0 active:invert-0 lg:mx-6 xl:mx-8">
+                  <img src="img/clients/telkom.png" alt="telkom" class="logo">
+               </a>
+            </div>
+         </div>
+      </div>
+    </section>
+   <!-- Clients Section End -->
+
+   <!-- Contact Section Start -->
+   <section id="contact" class="pt-25 pb-32">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+               <h4 class="font-semibold text-lg text-pinkbased mb-2">Contact</h4>
+               <h2 class="font-bold text-purplebased text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
+               <p class="font-medium text-md text-teks2 md:text-lg">Feel free to reach out! I’m always open to discussions, collaborations, and new opportunities 🙌</p>
+            </div>
+         </div>
+
+         <form>
+            <div class="w-full lg:w-2/3 lg:mx-auto">
+               <div class="w-full mb-8 px-4">
+                  <label for="name" class="text-base text-pinkbased font-semibold">Name</label>
+                  <input type="text" id="name" class="w-full bg-teks2 text-black p-3 rounded-md focus:outline-none focus:ring-pinkbased focus:ring-1 focus:border-pinkbased">
+               </div>
+               <div class="w-full mb-8 px-4">
+                  <label for="email" class="text-base text-pinkbased font-semibold">Email</label>
+                  <input type="text" id="email" class="w-full bg-teks2 text-black p-3 rounded-md focus:outline-none focus:ring-pinkbased focus:ring-1 focus:border-pinkbased">
+               </div>
+               <div class="w-full mb-8 px-4">
+                  <label for="message" class="text-base text-pinkbased font-semibold">Message</label>
+                  <textarea type="text" id="message" class="w-full bg-teks2 text-black p-3 rounded-md focus:outline-none focus:ring-pinkbased focus:ring-1 focus:border-pinkbased h-30"></textarea> 
+               </div>
+               <div class="w-full px-4">
+                  <button class="text-base font-semibold bg-pinkbased py-3 px-8 rounded-full w-full hover:shadow-lg hover:bg-pink-300 transition duration-300 ease-in-out">Send</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </section>
+   <!-- Contact Section End -->
+
+   <!-- Footer Start -->
+   <footer class="bg-slate-800 pt-20 pb-12">
+      <div class="container mx-auto px-6 max-w-6xl">
+         <div class="flex flex-wrap justify-between">
+            <div class="w-full px-4 mb-12 font-medium md:w-1/2">
+               <h2 class="font-bold text-teks2 text-4xl mb-5">Pacific Buoy Corp</h2>
+               <h3 class="font-bold text-teks2 text-2xl mb-2">Contact Me</h3>
+               <p class="text-gray-500">helenpatricia061006@gmail.com</p>
+               <p class="text-gray-500">Beika Street</p>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/2">
+               <h3 class="font-semibold text-2xl text-teks2 mb-5">Link</h3>
+               <ul class="text-teks2 space-y-3">
+                  <li><a href="#home" class="inline-block text-base hover:text-pinkbased">Home</a></li>
+                  <li><a href="#about" class="inline-block text-base hover:text-pinkbased">About Me</a></li>
+                  <li><a href="#portfolio" class="inline-block text-base hover:text-pinkbased">Portfolio</a></li>
+                  <li><a href="#clients" class="inline-block text-base hover:text-pinkbased">Clients</a></li>
+                  <li><a href="#contact" class="inline-block text-base hover:text-pinkbased">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Garis Bawah Full Width -->
+      <div class="w-full border-t border-white pt-10">
+         <div class="flex items-center justify-center mb-5"> 
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/helenptrcia" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                  <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+               </svg>
+            </a>
+
+            <!-- X -->
+            <a href="https://www.x.com/lenptrcia" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+               </svg>
+            </a>
+
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com/@helenptrcia" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+               </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/helen-patricia-40a991341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-gray-400 text-gray-400 hover:border-pink-500 hover:bg-pink-500 hover:text-gray-400">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="" class="fill-current" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+               </svg>                        
+            </a>
+         </div>
+
+         <div>
+            <p class="font-medium text-xs text-center text-teks2">Dibuat oleh <a href="https://www.instagram.com/helenptrcia" target="_blank" class="font-bold text-pinkbased">Helen Patricia</a> <span> | </span> <a href="https://tailwindcss.com/" class="text-cyan-400">Tailwind CSS 4.0.17</a> </p>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer End -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
